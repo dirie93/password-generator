@@ -16,7 +16,7 @@ function generatePassword() {
   var passwordLength = 8;
   var integers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
   var symbols = ["!", "@", "?", ":", "£", "#", ";", "%", "~"];
-  // adding lowercase letters
+  // adding lowercase characters
   var lowerCase = [
     "a",
     "b",
@@ -45,6 +45,7 @@ function generatePassword() {
     "y",
     "z",
   ];
+  // adding uppercase characters
   var upperCase = [
     "A",
     "B",
@@ -73,6 +74,11 @@ function generatePassword() {
     "Y",
     "Z",
   ];
+
+  // used concat method so that the characters are randomised for password generator
+  var allCharacters = integers.concat(symbols, lowerCase, upperCase);
+
+  for (var i = 0; i < passwordLength; i++) {}
 }
 
 // Add event listener to generate button
