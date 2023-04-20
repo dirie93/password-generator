@@ -15,7 +15,7 @@ SO THAT I can create a strong password that provides greater security
 
 ![image](https://user-images.githubusercontent.com/128429238/233491680-9e5d3b4c-6ef7-40b5-8a79-9fa6a5b28374.png)
 
-[Deployed App:](https://www.google.co.uk/)
+ 
 
 ## Reflection 
 
@@ -32,5 +32,5 @@ Visit my [Github](https://github.com/dirie93/password-generator)
 
 <br>
 
-Visit my [App](https://dirie93.github.io/password-generator/)
+Visit my [Deployed App](https://dirie93.github.io/password-generator/)
 
