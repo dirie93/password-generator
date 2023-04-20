@@ -32,5 +32,5 @@ Visit my [Github](https://github.com/dirie93/password-generator)
 
 <br>
 
-Visit my [App]()
+Visit my [App](https://dirie93.github.io/password-generator/)
 
