@@ -26,4 +26,11 @@ SO THAT I can create a strong password that provides greater security
  * Better understanding of the for-loop and iterating through the array to reach certain conditions etc.
                
  
+## Contact 
+
+Visit my [Github](https://github.com/dirie93/password-generator)
+
+<br>
+
+Visit my [App]()
 
