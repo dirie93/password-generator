@@ -75,10 +75,44 @@ function generatePassword() {
     "Z",
   ];
 
-  // used concat method so that the characters are randomised for password generator
-  var allCharacters = integers.concat(symbols, lowerCase, upperCase);
+  // using alert to prompt User
 
-  for (var i = 0; i < passwordLength; i++) {}
+  var requireNum = window.confirm("Does your password require numbers?");
+  var requireLowerCase = window.confirm(
+    "Does your password require lower case?"
+  );
+  var requireUpperCase = window.confirm(
+    "Does your password require upper case?"
+  );
+  var requireSymbols = window.confirm("Does your password require symbols?");
+
+  var requiredChars = [];
+
+  // if-else logic assess user input if they input yes then the password generator will include those selected characters in the final password
+
+  if (requireNum) {
+    requiredChars = requiredChars.concat(integers);
+  }
+
+  if (requireLowerCase) {
+    requiredChars = requiredChars.concat(lowerCase);
+  }
+
+  if (requireUpperCase) {
+    requiredChars = requiredChars.concat(upperCase);
+  }
+
+  if (requireSymbols) {
+    requiredChars = requiredChars.concat(symbols);
+  }
+
+  // Generating the password using the requiredChars array
+  for (var i = 0; i < passwordLength; i++) {
+    var randomIndex = Math.floor(Math.random() * requiredChars.length);
+    password += requiredChars[randomIndex];
+  }
+
+  return password;
 }
 
 // Add event listener to generate button
